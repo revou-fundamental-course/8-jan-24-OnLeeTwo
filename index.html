@@ -2,28 +2,79 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device=width, intial-scale=1.0">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
         <title> Kalkulator Persegi</title>
     </head>
     <body>
         <header>
-            <h1>Luas Persegi</h1>
-            <h4>Welcome to kalkulator Las dan Keliling persegi</h4>
-            <p>Web ini dibuat oleh Owent Ovandy sebagi salah satu mini project di fundamental course di RevoU</p>
+            <h1>Kalkulator Persegi</h1>
+            <h4>Selamat datang di website untuk membantu perhitungan Persegi!</h4>
+            <p>Web ini dirancang sebagai salah satu mini project di Fundamental Course Software Engineering di RevoU</p>
         </header>
-        <div class="input">
-            <label for="squareSide" id="labelSquareSide">Hitung Luas Persegi</label>
-            <input type="number" id="squareSide">
-        </div>
-        <div>
-            <div class="button">
-                <button id="hitungButton">Hitung</button>
-                <button id="resetButton">Reset</button>
+        <nav class="menu">
+            <a href="#perimeter">Keliling Persegi </a>
+            <a href="#area">Luas Persegi</a>
+            <a href="#diagonal">Diagonal Persegi</a>
+        </nav>
+        <br>
+        <section class="square" id="perimeter">
+            <h2>Keliling Persegi</h2>
+            <img src="assets/square.png" alt="Keliling Persegi">
+            <p>Untuk menghitung keliling persegi, digunakan rumus:</p>
+            <h4 class="formula">K = 4 &times; a </h4>
+            <p>Dimana:<br>K = Keliling persegi (cm)<br>a = Sisi persegi (cm)<br>(Catatan: satuan bebas)</p>
+            <div class="input">
+                <label for="squareSide" id="labelPerimeter">Hitung Keliling Persegi</label>
+                <input type="number" id="squareSide">
             </div>
-        </div>
+            <div>
+                <div class="button">
+                    <button id="hitungButton">Hitung</button>
+                    <button id="resetButton">Reset</button>
+                </div>
+            </div>
+        </section>
+        <br><br>
+        <section class="square" id="area">
+            <h2>Luas Persegi</h2>
+            <img src="assets/square2.png" alt="Luas Persegi">
+            <p>Untuk menghitung luas persegi, digunakan rumus:</p>
+            <h4 class="formula">A = a &times; a </h4>
+            <p>Dimana:<br>A = Luas persegi (cm²)<br>a = Sisi persegi (cm)<br>(Catatan: satuan bebas)</p>
+            <div class="input" id="inputArea">
+                <label for="squareSide" id="labelArea">Hitung Luas Persegi</label>
+                <input type="number" id="squareSide">
+            </div>
+            <div>
+                <div class="button">
+                    <button id="hitungButton">Hitung</button>
+                    <button id="resetButton">Reset</button>
+                </div>
+            </div>
+        </section>
+        <br><br>
+        <section class="square" id="diagonal">
+            <h2>Diagonal Persegi</h2>
+            <img src="assets/square3.png" alt="Diagonal Persegi">
+            <p>Untuk menghitung diagonal persegi, digunakan rumus:</p>
+            <h4 class="formula">d = a&radic;2 </h4>
+            <p>Dimana:<br>d = Diagonal persegi (cm)<br>a = Sisi persegi (cm)<br>(Catatan: satuan bebas)</p>
+            <div class="input" id="inputDiagonal">
+                <label for="squareSide" id="labelDiagonal">Hitung Diagonal Persegi</label>
+                <input type="number" id="squareSide">
+            </div>
+            <div>
+                <div class="button">
+                    <button id="hitungButton">Hitung</button>
+                    <button id="resetButton">Reset</button>
+                </div>
+            </div>
+        </section>
+        <br><br>
         <footer>
-
+            <p>Dibuat Oleh: Owent Ovandy <br> 8 Januari 2024</p>
+            <a href="#" id="top">Back to top</a>
         </footer>
     </body>
 </html>
