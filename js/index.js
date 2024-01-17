@@ -11,8 +11,9 @@ function perimeter(){
     let perimeter = 4*sidePerimeter
     let contentPerimeter = `Hasil:
     = 4 × a
-    = 4 × ${sidePerimeter}
-    = ${perimeter}
+    = 4 × ${sidePerimeter} cm
+    = ${perimeter} cm
+    Jadi, persegi dengan sisi sebesar ${sidePerimeter} cm akan memiliki keliling sebesar ${perimeter} cm
     `;
     document.getElementById("perimeterResult").innerHTML= contentPerimeter;
 }
@@ -34,8 +35,9 @@ function area(){
     let area = sideArea*sideArea
     let contentArea = `Hasil:
     = a × a
-    = ${sideArea} x ${sideArea}
-    = ${area}
+    = ${sideArea} cm x ${sideArea} cm 
+    = ${area} cm²
+    Jadi, persegi dengan sisi sebesar ${sideArea} cm akan memiliki luas sebesar ${area} cm²
     `;
     document.getElementById("areaResult").innerHTML= contentArea;
 }
@@ -58,8 +60,9 @@ function diagonal(){
     let diagonalR = diagonal.toFixed(3)
     let contentDiagonal = `Hasil:
     = a × √2
-    = ${sideDiagonal} × √2
-    = ${diagonalR}
+    = ${sideDiagonal} cm × √2
+    = ${diagonalR} cm
+    Jadi, persegi dengan sisi sebesar ${sideDiagonal} cm akan memiliki diagonal sebesar ${diagonalR} cm²
     `;
     document.getElementById("diagonalResult").innerHTML = contentDiagonal;
 }
